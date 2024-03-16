@@ -3,7 +3,7 @@
 Collection of devkitPro packages for Nix using flakes.
 
 ```
-$ nix flake show github:knarkzel/devkitnix
+$ nix flake show github:JesseSilv/devkitnix
 └───packages
     └───x86_64-linux
         ├───devkitA64: package 'devkitA64'
@@ -21,7 +21,7 @@ devkitPPC  libogc  portlibs  tools  wut
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
     devkitnix = {
-      url = "github:knarkzel/devkitnix";
+      url = "github:JesseSilv/devkitnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -45,5 +45,5 @@ devkitPPC  libogc  portlibs  tools  wut
   };
 }
 ```
-
+Forked from Knarkzel with modifications of less ram
 For more example usage of `devkitnix`, see the [switch example](https://github.com/knarkzel/switch).
